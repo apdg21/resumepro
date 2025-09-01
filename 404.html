@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+      // Get the current path after /resumepro/
+      const path = window.location.pathname.replace(/^\/resumepro/, "");
+      // Redirect to Cloudflare site, preserving the path
+      window.location.href = "https://resumepro.pages.dev" + path + window.location.search + window.location.hash;
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a id="link" href="#">resumepro.pages.dev</a>...</p>
+    <script>
+      const path = window.location.pathname.replace(/^\/resumepro/, "");
+      document.getElementById("link").href = "https://resumepro.pages.dev" + path + window.location.search + window.location.hash;
+    </script>
+  </body>
+</html>
